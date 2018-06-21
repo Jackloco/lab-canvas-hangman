@@ -1,8 +1,5 @@
 var hangman;
 
-//
-
-
 function Hangman() {
     this.words = ["dickbutt", "jackson", "jose", "cat", "duck", "jeb", "pepe", "halo", "letter", "phone"];
     this.secretWord = "";
@@ -90,3 +87,8 @@ document.getElementById('start-game-button').onclick = function () {
 document.onkeydown = function (e) {
 
 };
+//
+var myHangMan = new Hangman();
+myHangMan.getWord();
+var myCanvas = new HangmanCanvas(myHangMan);
+//this block of code connects this file to the canvas file
