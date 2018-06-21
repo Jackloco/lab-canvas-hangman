@@ -85,8 +85,10 @@ document.getElementById('start-game-button').onclick = function () {
 
 
 document.onkeydown = function (e) {
+    this.writeCorrectLetter(e);
 
 };
+
 //
 var myHangMan = new Hangman();
 myHangMan.getWord();
